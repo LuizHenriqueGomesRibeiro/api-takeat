@@ -1,7 +1,6 @@
 const { SECRET } = require('../../middleware/auth');
-const { Restaurant, Sequelize } = require('../../models');
-const { Op } = Sequelize;
-
+const { Restaurant } = require('../../models/restaurants');
+        
 const jwt = require('jsonwebtoken');
 
 exports.register = async (req, res) => {
